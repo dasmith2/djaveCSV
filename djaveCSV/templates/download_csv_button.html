@@ -1,0 +1,7 @@
+{{ button }}
+<script>
+  var query_string_obj = get_query_string_obj();
+  query_string_obj['csv'] = '1';
+  $('.download_csv_button').attr(
+      'href', current_url_with_query_string(query_string_obj));
+</script>
